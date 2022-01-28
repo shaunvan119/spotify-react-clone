@@ -1,10 +1,12 @@
 import React from "react";
 import "./Header.css";
+import { useStateValue } from "./StateProvider";
 import SearchIcon from "@material-ui/icons/Search";
 import { Avatar } from "@material-ui/core";
 
 
 function Header({ spotify }) {
+    const [{ user }, dispatch] = useStateValue();
   
 
   return (
@@ -18,7 +20,7 @@ function Header({ spotify }) {
       </div>
       <div className="header__right">
       <Avatar src="" alt="RQ"/>
-      <h4> test test</h4>
+      <h4>{user?.display_name}</h4>
 
         
       </div>
