@@ -13,7 +13,12 @@ function Footer() {
     return (
        <div className="footer">
        <div className="footer__left">
-       <p>Album ad song details</p>
+       <img 
+       className="footer__albumLogo"
+       src="https://m.media-amazon.com/images/I/41S71EWF1ZL.jpg" 
+       alt=""/>
+       <h4>Ride the lightning</h4>
+       <p>Mettalica</p>
     </div>
 
        <div className="footer__centre">
